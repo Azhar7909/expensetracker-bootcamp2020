@@ -7,14 +7,17 @@ import Footer from '../components/Footer';
 import '../App.css'
 
 
+
+
 export default function HomeScreen() {
     return (
         <div className="Container">
             <div className="homeContainer"> 
                 <Header /> 
-                <DisplayBalance />
-                <TransactionsHistory />
-                <AddTransactions />
+                    <DisplayBalance />
+                    <TransactionsHistory />
+                    <AddTransactions />
+                
                 <Footer />
             </div> 
         </div>

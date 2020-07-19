@@ -39,13 +39,14 @@
   padding: 5px 5px;
   background-color: #ffffff;
   box-shadow: 2px 4px 13px 2px grey;
+  margin-bottom: 5px;
 
 }
 .listContainer{
   padding: 0;
   list-style: none;
 }
-.icomeHistory{
+.incomeHistory{
   border-right: 5px solid darkgreen;
 }
 .expenseHistory{
