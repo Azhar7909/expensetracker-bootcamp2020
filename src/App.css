@@ -1,38 +1,95 @@
-.App {
+.Container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.homeContainer{
+  background-color: #f1ecec;
+  width: 400px;
+  padding: 0px 20px;
+  margin-top: 7px; 
+  margin-bottom: 10px; 
+  box-shadow: 0px 5px 9px 2px grey;
+}
+
+/* ###### Display Balance ###### */
+.balContainer{
+  display: flex;
+  justify-content: space-around;
+  background: #ffff;
+  padding: 20px;
   text-align: center;
+  border-left: 5px solid darkgreen;
+  border-right: 5px solid darkred;
+  box-shadow: 2px 4px 13px 2px grey;
+}
+.expenseContainer{
+  width: 100%;
+  border-left: 1px solid lightgray;
+}
+.incomeContainer{
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*  ######## Transaction History ######## */
+.listItem{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px;
+  background-color: #ffffff;
+  box-shadow: 2px 4px 13px 2px grey;
+
+}
+.listContainer{
+  padding: 0;
+  list-style: none;
+}
+.icomeHistory{
+  border-right: 5px solid darkgreen;
+}
+.expenseHistory{
+  border-right: 5px solid darkred;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ########### Add Transaction History ########### */
+.addForm{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.formField{
+  border: none;
+  border-bottom: 3px solid darkcyan;
+  margin: 3px 0px;
+  background: lightgray;
+  height: 25px;
+  width: 93%;
+  color: darkgreen;
+  padding: 5px 15px ;
+  box-shadow: 2px 4px 13px 2px grey;
+  
+}
+.submitBtn{
+  height: 30px;
+  background-color: darkcyan;
+  color: #ffff;
+  width: 235px;
+  margin-bottom: 10px;
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 2px 4px 13px 2px grey;
+}
+
+
+/* ###### Footer ###### */
+.footer{
+  grid-area: footer;
+  background-color: #3f51b5;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  color: #ffffff;
+  height: 8px;
 }
