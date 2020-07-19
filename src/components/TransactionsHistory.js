@@ -9,16 +9,14 @@ export default function TransactionsHistory() {
     return (
         <div>
             <p className="">History</p><hr/>
-            {data !="" ? data.map((d,index)=>{
-                return(
-                    <ul className="listContainer">
-                <li className="listItem">
+            <ul className="listContainer">
+            {data !=="" ? data.map((d,index)=>(
+                <li className="listItem" key={index+1} >
                     <span>{d.desc}</span>
                     <span>${d.amount}</span>
                 </li>
-            </ul>
-                )
-            }) : <p style={{color:'darkred',textAlign:'center'}}>No Transaction yet!</p>}
+                )) : <p style={{color:'darkred',textAlign:'center'}}>No Transaction yet!</p>}
+            </ul>            
         </div>
     )
 }
