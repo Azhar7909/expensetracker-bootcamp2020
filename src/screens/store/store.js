@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 let initialSate = [
-    {desc: "Cash", amount: 500}
+    {desc: "Cash", amount: 800}
 ]
 
 export const contextData = createContext(initialSate);
